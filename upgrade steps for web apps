@@ -1,0 +1,7 @@
+Steps to install new version of new version of any website app like [AGP.Arch.erpx.Web] : 
+  1- extract files and delete (appsettings.json [file]- AppData[folder] - reports[folder] )
+  2- Stop IIS   
+  3- then replace the extracted folder to the target directory .
+  4- Run the next query on brca data (db) : 
+      UPDATE Brca.Settings  SET Value='True' WHERE [Key] like 'Run%DbInitialize'
+  5- start IIS , open your site then make upgrades . 
